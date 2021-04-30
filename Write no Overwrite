@@ -1,0 +1,17 @@
+try {
+            try (FileWriter myWriter = new FileWriter("registers.txt", true)) {
+                myWriter.write(userVerification+"\n");
+                myWriter.write(mailVerification+"\n");
+                myWriter.write(codeVerification+"\n");
+                myWriter.write(passVerification+"\n");
+                myWriter.write("================\n");
+                myWriter.close();
+            }
+            System.out.println("Successfully wrote to the file.");
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+        }
+        
+        
+        
+        // change variables, change txt name, true or false to overwrite or no
